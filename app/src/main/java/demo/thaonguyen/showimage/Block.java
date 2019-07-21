@@ -4,13 +4,13 @@ import java.util.Date;
 
 public class Block {
     int blockID;
-    byte[] data;
+    String data;
     String hash;
     String preHash;
     Date timeStamp;
     int nonce;
 
-    public Block(int blockID, byte[] data, String hash, String preHash, Date timeStamp, int nonce) {
+    public Block(int blockID, String data, String hash, String preHash, Date timeStamp, int nonce) {
         this.blockID = blockID;
         this.data = data;
         this.hash = hash;
@@ -26,7 +26,7 @@ public class Block {
         return blockID;
     }
 
-    public byte[] getData() {
+    public String getData() {
         return data;
     }
 
